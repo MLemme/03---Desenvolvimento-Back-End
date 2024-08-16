@@ -1,0 +1,12 @@
+Embora você não possa utilizar o operador await no processamento síncrono, pode trabalhar
+com o operador then, que captura o retorno da função, remove a camada promise e permite
+especificar uma função de tratamento. Note que o uso de then não bloqueia, como ocorre
+com await, permitindo apenas efetuar o tratamento da informação quando ela for recebida.
+As funções de tratamento são chamadas de callback e são a base para o comportamento
+assíncrono no NodeJS. Na prática, temos apenas uma função que fica preparada para receber os
+dados de um processo assíncrono, ao seu término, permitindo efetuar o tratamento necessário.
+Você verá esse tipo de programação sendo utilizado para as mais diversas operações de
+I/O, como no tratamento de arquivos e chamadas HTTP, já que são demoradas e poderiam
+bloquear a execução do servidor. Na prática, será comum invocarmos a operação e fornecer
+a callback que irá lidar com os dados na conclusão do processo.
+Um exemplo de leitura de arquivo assíncrona é apresentado a seguir.
