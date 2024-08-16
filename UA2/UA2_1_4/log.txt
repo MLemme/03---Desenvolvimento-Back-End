@@ -1,0 +1,3 @@
+No exemplo apresentado, criamos um fluxo (stream) de leitura, configurado para iniciar
+na posição 5 do arquivo e ler até a posição 200, em blocos contendo 10 caracteres. Através
+do evento data, cada fragmento (chunk) lido é impresso no console, como na figura seguinte
