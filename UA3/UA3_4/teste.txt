@@ -1,0 +1,4 @@
+Em um fluxo com processamento síncrono, podemos utilizar o operador then na chamada
+de uma função assíncrona. Esse operador captura o retorno e permite especificar uma função
+de tratamento, ou callback, mas não bloqueia a execução do fluxo principal, viabilizando
+que o tratamento da informação ocorra apenas quando ela for recebida.
