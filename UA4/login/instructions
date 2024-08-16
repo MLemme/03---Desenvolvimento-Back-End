@@ -1,0 +1,17 @@
+npm init -y
+npm i sequelize mysql2
+npm i sequelize-cli
+npx sequelize-cli init
+
+npx sequelize-cli model:generate --name User --attributes nome:string,login:string,senha:string
+npx sequelize-cli db:create
+npx sequelize-cli db:migrate
+
+npm install bcrypt
+
+npx sequelize-cli seed:generate --name user
+
+npx sequelize-cli db:seed:all
+
+npm i express cors
+npm i jsonwebtoken

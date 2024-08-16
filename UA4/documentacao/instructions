@@ -1,0 +1,6 @@
+npm init -y
+npm i express swagger-ui-express
+
+npm install swagger-autogen
+
+node doc-gen
